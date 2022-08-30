@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <style>body{
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: linear-gradient(to left, rgb(20, 147, 220), rgb(17, 54, 71));}
+      .box{
+    position: absolute;      
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+
+  }
+  fieldset{
+    border-radius: 15px;
+  }
+  legend{
+    text-align: center;
+    border: 1px solid rgb(16, 29, 104);
+    padding: 10px;
+    border-radius: 15px;
+  }
+  button {
+    border-radius: 8px;
+    
+  }
+ 
+  
+      </style>
+      
+  </head>
+  <body>
+    <div class="box">
+      <form action="">
+        <fieldset>
+          <legend><b>Formulário</b></legend>
+          <br />
+          <div class="inputBox">
+            <input
+              type="text"
+              user="Usuário"
+              id="user"
+              class="inputUser"
+              required
+              label
+              for="Usuário"
+            />
+            Usuário
+          </div>
+          <br><br>
+          <div class="inputBox">
+            <input
+              type="text"
+              password="Senha"
+              id="password"
+              class="inputPassword"
+              required
+              label
+              for="Senha"
+            />
+            Senha
+            <br><br>
+            
+           
+            <button onclick="boasVindas()" type="submit" id="submit">Enviar</button> 
+            <div>
+              
+             <br>
+            <button type="reset" id="reset"> Cancelar</button></div> 
+            
+            
+          </fieldset>
+          
+      </form>
+    </div>
+    <script type="text/javascript" src="js/.js"></script>
+  </body>
+</html>
